@@ -1,0 +1,135 @@
+.charContainer {
+  margin: 1rem;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.charIMG {
+    max-width: 100%;
+}
+
+.charContainer a{
+  text-decoration: none;
+  color: white 
+}
+
+.charTitle {
+  font-size: 15px;
+  color: rgba(122, 243, 243);
+  outline: lime;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem
+}
+.searchBar {
+  position: relative;
+  width: 70%;
+  margin: auto;
+}
+.searchBar input{
+  width: 100%;
+  padding: 6px 10px;
+  border-radius: 10px;
+  border: none;
+  
+}
+.searchBar input:focus{
+  border: 1px solid lime;
+  outline: 1px solid lime;
+}
+.selectsContainer {
+  display: flex;
+  gap: 1rem;
+  margin: auto;
+}
+.selectsContainer select{
+  padding: 3px 8px;
+  border: none;
+  border-radius: 6px;
+}
+
+.characterDetail {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.characterDetail h2{
+  font-size: 40px;
+}
+
+.characterDetail h4{
+  color: white;
+  font-size: 30px;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+.characterDetail ul {
+  list-style: none;
+  color: white;
+  max-width: 100%;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+
+.back {
+  font-style: none;
+  display: inline-block;
+  padding: 6px 10px;
+  border: 1px solid lime;
+  border-radius: 1rem;
+  color: lime;
+  background-color: rgba(122, 243, 243, 0.7);
+  width: 45%;
+  margin: 1rem auto;
+
+}
+
+.charInfo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  max-width: 100%;
+}
+.charInfo p {
+  padding: 5px;
+  border: 1px solid lime;
+}
+
+.starFavorite {
+  width: 25px;
+  
+}
+.btnFavorite {
+  background-color: rgba(122, 243, 243, 0.7);
+  border: 1px solid lime;
+  border-radius: 10px;
+
+}
+
+.btnCleaner {
+  color:red;
+  z-index: 2;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: none;
+  position: absolute;
+  top: 0px;
+  right: -20px;
+
+}
+
+.btnCleaner:hover {
+  background-color: red;
+  color: rgba(244, 243, 236, 0.5);
+  outline: 1px solid rgba(244, 243, 236, 0.5);
+}

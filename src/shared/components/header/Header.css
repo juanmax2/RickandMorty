@@ -1,0 +1,58 @@
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.titleContainer {
+  position: relative;
+  display: flex;
+  margin: auto;
+  padding: 0;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.title{
+  max-width: 100%;
+}
+
+.titleShadow {
+  position: absolute;
+  margin: auto;
+  backdrop-filter: blur(10px);
+  animation: pulse 2s ease-in-out infinite;
+  max-width: fit-content;
+  max-width: 100%;
+  
+}
+.navMenu {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem;
+
+}
+.navMenu a{
+  text-decoration: none;
+  background-color: rgba(122, 243, 243, 0.7);
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 1px solid lime;
+  color: lime;
+}
+
+
+
+@keyframes pulse{
+  0%{
+    opacity: 0.5;
+  }
+  50%{
+    opacity: 0.95;
+  }
+  100%{
+    opacity: 0.5;
+  }
+
+}

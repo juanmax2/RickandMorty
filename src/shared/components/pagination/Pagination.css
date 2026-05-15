@@ -1,0 +1,31 @@
+.paginationContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.paginationContainer p{
+    border: 1px solid lime;
+    color: lime;
+    background-color: rgba(122, 243, 243, 0.7);
+    padding: 4px 8px;
+    border-radius: 10px;
+
+}
+
+.paginationContainer button{
+    border: 1px solid lime;
+    color: lime;
+    background-color: rgba(122, 243, 243, 0.7);
+    padding: 4px 8px;
+    border-radius: 10px;
+}
+
+.clicks {
+    width: 10px;
+}
+
+.disabled {
+    display: disabled;
+}
